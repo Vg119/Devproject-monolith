@@ -1,0 +1,39 @@
+# --- Build Artifacts ---
+target/
+build/
+bin/
+out/
+*.log
+
+# --- Maven Wrapper (Keep for portability) ---
+# We keep the jar so others can build without installing Maven
+# Ensure the Maven Wrapper binary is NOT ignored
+! .mvn/wrapper/maven-wrapper.jar
+
+# --- Security: AI Keys & Local Config ---
+# --- Environment Secrets ---
+.env
+.env.local
+.env.*
+# Ignore local secret files only
+src/main/resources/application-local.yml
+src/main/resources/application-local.properties
+
+# --- IDEs ---
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+.springBeans
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Miscellaneous ---
+HELP.md
